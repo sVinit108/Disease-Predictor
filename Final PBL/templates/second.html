@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Disease Predictor</title>
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+
+    <body>
+        <center>
+    	<div class="ml-container" style="width:300px; height:75px; float:left; margin:5px 40px 0;">
+    		<form action="{{ url_for('predict') }}" method="POST">
+                
+                <h1 style="color: whitesmoke; text-align: center; padding-right: 2.5em; font-weight: bolder; font-size: larger; text-align: center;">Enter the symtomps </h1>
+                <select name="Symptoms" id="Symptoms" style="margin: 10px 60px 20px 90px; text-align: center;" >
+                    <option value="">Headache,Vomiting1</option>
+                    <option value="">Headache, Vomiting2</option>
+                    <option value="">Headache, Vomiting3</option>
+                    <option value="">Headache, Vomiting4</option>
+                    <option value="">Headache, Vomiting5</option>
+                    <option value="">Headache, Vomiting6</option>
+                </select>
+                <!-- <a href="result.html"> -->
+                <input type="submit" class="my-cta-button" value="Predict" style="margin: 10px 60px 20px 90px;"></a>
+            </center>
+                <div class="head">
+                    <img src="Images/img2.svg" alt="Image">
+                    </div>
+                <br>
+        	
+        	</form>
+    	</div>
+    </body>
+</html>

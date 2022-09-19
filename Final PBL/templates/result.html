@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Disease Predictor</title>
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+	</head>
+
+    <body bgcolor="blue">
+		<div class="results">
+			<!-- <center><h1>{{prediction}}</h1></center> -->
+			<h1>there is strong possibility you are suffering from-</h1>
+			<h2>{{prediction}}</h2>
+			<!-- <h2>(vertigo) Paroymsal Positional Vertigo</h2> -->
+		</div>
+	</body>
+
+	<style>
+		body{
+			background-image: url("/static/image/background.jpg");
+			background-size: cover;
+		}
+	</style>
+</html>

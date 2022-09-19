@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Disease Predictor</title>
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+
+    <body>
+    	<div class="ml-container" style="width:300px; height:75px; float:left; margin:5px 40px 0;">
+    		<form action="{{ url_for('predict') }}" method="POST">
+                <h1>Enter the symptoms </h1>
+
+                <h1><input class="form-input" type="text" name="Symptoms" placeholder="Headache,Vomiting..." size="100"><br></h1> 
+        
+                </select>
+
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+    </body>
+</html>
